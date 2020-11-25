@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<head>
+    <h1 id="nume"><i><b>Tomescu Adrian Gabriel</b></h1></i>
+ <title>Informatica Aplicata 2020-2021</title></head>
+ <body>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    
+  
+  * {box-sizing: border-box;}
+  body {font-family: Verdana, sans-serif;}
+  .mySlides {display: none;}
+  img {vertical-align: middle;}
+  
+  /* Slideshow container */
+  .slideshow-container {
+        max-width:1500px;
+        position: relative;
+        margin-left:130px;
+  margin-right:130px;
+  padding-left: 400px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border: white;
+  background-color:slategray;
+  padding-right:400px;
+      }
+  
+  .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: slategray;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      .active {
+        background-color:white;
+      }
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 50%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+
+  
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+  </style>
+  
+      
+    
+    <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 3000); // Change image every 3 seconds
+      document.getElementById("poza1").style="display:none";
+      document.getElementById("poza2").style="display:none";
+      document.getElementById("poza3").style="display:none";
+    }
+    </script>
+  <p class="datelemele"><a id="mail" href="https://login.yahoo.com/?.intl=in">aditza_tom17@yahoo.com</a></p>
+<h2 id="specs"><u>Specificatii tehnice ale statiei principale de lucru</h2></u>
+<table>
+    <th>Denumire componenta</th>
+    <th>Producator</th>
+    <th>Parametrii</th>
+   <tr></tr>
+    <td> Placa video NVIDIA GEFORCE GTX 1650</td>
+    <td>NVIDIA</td>
+    <td>Grafica dedicata GeForce GTX 1650 4GB pentru o performanta suplimentara in jocuri.</td>
+    
+    <tr></tr>
+    <td>Procesor AMD Ryzen™ 7 3750H</td>
+    <td>AMD</td>
+    <td>Procesor AMD cu 4 nuclee R7-3750H pentru acoperirea cerintelor avansate specifice gaming-ului.</td>
+    
+    <tr></tr>
+    <td>Memorie interna</td>
+    <td>-</td>
+    <td>Capacitate mare de stocare de tip SSD, de 512GB, pentru o accesare rapida a informatiilor.</td>
+    
+    <tr></tr>
+    <td>Baterie Li-Ion</td>
+    <td>Rombat</td>
+    <td>4 celule</td>
+    
+    <tr></tr>
+    <td>Memorie Ram</td>
+    <td>-</td>
+    <td>16GB DDR4</td>
+    
+    <tr></tr>
+    <td>TASTATURA DE INSPIRATIE DESKTOP CU SISTEM DE ILUMINARE RGB</td>
+    <td>Hyper Strike</td>
+    <td> tastarea mai precisa si un nivel imbunatatit de ergonomie datorita organizarii inspirate de sistemele desktop, cu grupul de taste WASD evidentiat</td>
+
+</table>
+<div class="otherbody">
+<h2 id="struct"><u>Structura retelei personale si accesul la internet</u>
+</h2>
+<img id="diagrama" src="diagrama.png">
+<ul><h2 id="carac"><u></h>Caracteristici conexiune retea</h2></u>
+  <li start=I type=I> Ethernet adapter Ethernet:  Physical Address. . . . . . . . . : D4-5D-64-5F-AF-1E</li>
+  <li start=I type=I> IPv4 Address. . . . . . . . . . . : 192.168.1.10(Preferred)</li>
+  <li start=I type=I>Download Mbps 548.24 </li>
+  <li start=I type=I>Upload Mbps 211.62 </li>
+  
+</ul>
+</div>
+
+    <h3><u><p id="button" ondblclick="showSlides()">Utilizarea resurselor(Slideshow)</h3></p></u>
+    <div class="pozefaine">
+    <img id="poza1"  style="width:320px;,height=320px;" src="procesor.png"></img>
+    <img id ="poza2" style="width:320px;,height=320px;" src="ram.png"></img>
+   <img id="poza3" style="width:320px;,height=320px;" src="disk.png"></img>
+  </div>
+    <div class="slideshow-container">
+
+
+
+
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="disk.png" style="width:100%">
+        <div class="text""></div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="procesor.png" style="width:100%">
+        <div class="text"></div>
+      </div>
+   
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="ram.png" style="width:100%">
+        <div class="text" "></div>
+      </div>
+    
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+    </table>
+    
+   
+      
+     
+<link rel="stylesheet" type="text/css" href="css3.css">
+</body>
+
+</html>
